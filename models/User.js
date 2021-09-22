@@ -1,2 +1,2 @@
 //for hashing user password
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
