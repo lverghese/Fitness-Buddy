@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Excercises, ser } = require('../models');
+const { Excercises } = require('../models');
 
 // get all workouts for user's dashboard
 router.get('/', (req, res) => {

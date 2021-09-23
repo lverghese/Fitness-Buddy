@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { User } = require('../../models');
-
+const { User } = require('../../models/User');
+const { bcryptjs } = require ('bcryptjs');
 //GET users
 router.get('/', (req, res) => {
     //access user model and findAll
