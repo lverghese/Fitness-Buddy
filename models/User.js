@@ -49,11 +49,11 @@ User.init(
         len: [4]
       }
     },
-    workoutPlan_ID: {
+    workout_plan_id: {
       type: DataTypes.STRING,
       allowNull: false,
       references:{
-        workoutPlan_ID
+        workout_plan_id
       }
     }
   },
