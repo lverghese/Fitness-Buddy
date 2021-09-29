@@ -6,39 +6,25 @@ const withAuth = require('../utils/auth');
 //took out withAuth for testing
 //user/:id
 router.get('/',  (req, res) => {
-  // Dashboard should get one user's profile
-  // user's profile should have one plan associated with it
-  // plans will have multiple exercises spanning across days
   Plan.findOne({
     where: {
       id: req.session.plan_id
-    },
-    include: [
-      {
-        model: Exercise,
-        attributes: ['exercise_name', 'day_id'],
-        include: [
-          {
-            model: Day,
-            attributes: ['day_name']
-          }
-        ]
-      }
-    ]
-  })
-  .then(dbPlanData => {
-    if(!dbPlanData){
-      res.status(404).json({ message: 'No plan data for this user' });
-      return;
     }
-    res.json(dbPlanData);
-    const plan = dbPlanData.map(plan => plan.get({ plain: true }));
-    res.render('dashboard', {plan, loggedIn: true });
-  })
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+})
+.then(dbPlanData => {
+  if (!dbPlanData) {
+    //console.log(req.session.id);
+    res.status(404).json({ message: 'No plan data for this user' });
+    return;
+  } 
+  res.json(dbPlanData);
+  const plan = dbPlanData.map(plan => plan.get({ plain: true }));
+  res.render('dashboard', {plan, loggedIn: true });
+})
+.catch(err => {
+  console.log(err);
+  res.status(500).json(err);
+});
 });
 
 module.exports = router;
