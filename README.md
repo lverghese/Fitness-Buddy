@@ -6,7 +6,7 @@
   ## URL
 https://fitness-buddy-2.herokuapp.com/
 
-  ##Screenshots of Deployed Application
+ ## Screenshots of Deployed Application
   ![Get Started](./views/image-1.png)
   ![Get Started](./views/image-2.png)
 
