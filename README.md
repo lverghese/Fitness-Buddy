@@ -13,6 +13,14 @@ https://fitness-buddy-2.herokuapp.com/
   ## Installation
   Clone the project (prerequisite: node.js, mysql, install dependencies) and run 'npm run watch' in your terminal and watch the Fitness Buddy application come alive.
   
+  ## Technologies Used
+  * HTML and CSS
+  * Javascript
+  * Node.js and Express.js
+  * Handlebars.js
+  * MySQL
+  * Sequelize
+  
   ## Usage
   Intended for users seeking a fitness plan with a wide range of exercises.
   To use please click on the link above.
