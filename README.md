@@ -13,7 +13,10 @@ https://fitness-buddy-2.herokuapp.com/
   Intended for users seeking a fitness plan with a wide range of exercises
   
   ## Contributing
-  Any contributions please email me at loganverghese@gmail.com.
+  Contributions made by
+  * https://github.com/connerc11
+  * https://github.com/Cluce059
+  * https://github.com/jbedford18
   
   ## Tests
     Run the application and create an account, log out and log back in and see your fitness plan has been saved.
