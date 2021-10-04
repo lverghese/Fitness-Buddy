@@ -20,6 +20,7 @@ https://fitness-buddy-2.herokuapp.com/
   * Handlebars.js
   * MySQL
   * Sequelize
+  * Flickity
   
   ## Usage
   Intended for users seeking a fitness plan with a wide range of exercises.
